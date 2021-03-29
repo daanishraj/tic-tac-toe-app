@@ -1,0 +1,69 @@
+/* .start-game-btn {
+  display: block;
+} */
+
+/* .grid-size-select {
+  display: inline-block;
+} */
+
+.body {
+    background-image: url("https://images.unsplash.com/photo-1608111283390-2e333b9b279c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-position :"center";
+    background-repeat : "no-repeat";
+    background-size : "cover";
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow;; */
+
+}
+
+.intro {
+    display: inline-block;
+  }
+  
+  .intro p {
+    display: inline;
+    font-style: italic;
+    font-size: 20px;
+    color:white;
+    }
+  
+  /* .intro select {
+    display: block;
+  } */
+  
+    .welcomeContainer {
+      text-align: center;
+      margin-top: 30vh;
+  
+    }
+
+    .welcomeContainer h1 {
+        color: white;
+    }
+  
+    .selectAndPlay {
+      margin-top: 20px;
+    }
+  
+    .selectAndPlay select {
+      width:75px;
+      text-align: center;
+      text-align-last: center;
+      
+    }
+    
+  
+    .selectAndPlay button {
+      background-color: orange;
+      width: 125px;
+      border-radius:10%;
+      color: white;
+      box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);   
+      margin-left: 10px;
+      cursor: pointer;
+      padding:5px 0px;
+    }
