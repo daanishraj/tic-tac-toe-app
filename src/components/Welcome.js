@@ -5,7 +5,7 @@ import styles from "./Welcome.module.css"
 class GridContainer extends React.Component {
     state = {
         gridSize: 3,
-        play: true
+        play: false
     }
 
     handleChange = (e) => {
@@ -21,8 +21,6 @@ class GridContainer extends React.Component {
     }
 
     handlePlayAgain = () => {
-        console.log("Play again...")
-
         this.setState({
             play: false
         })

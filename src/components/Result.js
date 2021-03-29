@@ -3,24 +3,19 @@ import React from "react"
 const Result = (props) => {
     let res = null;
 
-    // if (props.winner === null) {
-    //     res = <p>It's tie</p>
-    // } else {
-    //     res = <p>{props.winner} wins!</p>
-    // }
+    props.winner === null ? res = "It's a tie!" : res = `Player ${props.winner} wins!`
 
-    props.winner === null ? res = "It's a tie!" : res = `${props.winner} wins!`
-
-        return (
-            <div className="result-container">
-                <div className="result">Game Over! {res}</div>
+    return (
+        <div className="result-container">
+            <div className="game-over">
+                <p className="result">Game Over! {res}</p>
                 <button className="playBtn" onClick={props.playAgain}>
                     Play Again!
                 </button>
             </div>
-            )
-    
 
+        </div>
+    )
 }
 
 export default Result
