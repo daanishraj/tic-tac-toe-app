@@ -2,7 +2,7 @@ import React from "react"
 import GameBoard from "./GameBoard"
 import styles from "./Welcome.module.css"
 
-class GridContainer extends React.Component {
+class Welcome extends React.Component {
     state = {
         gridSize: 3,
         play: false
@@ -44,8 +44,8 @@ class GridContainer extends React.Component {
                             <p>Can you endure a longer game? Select the grid size i.e. 3 X 3, 4 X 4...</p>
                         </div>
                         <div className={styles.selectAndPlay}>
-                            <select value={this.state.gridSize} class="grid-size-select" onChange={this.handleChange}>
-                                <option value="3" selected>3</option>
+                            <select value={this.state.gridSize} className="grid-size-select" onChange={this.handleChange}>
+                                <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
@@ -67,4 +67,4 @@ class GridContainer extends React.Component {
     }
 }
 
-export default GridContainer
+export default Welcome

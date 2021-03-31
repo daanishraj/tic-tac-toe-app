@@ -32,9 +32,37 @@ pass the row and the col num back to the parent so it can update the score varia
 
     }
     render(){
-        const {rowNum, colNum} = this.props
+        
+        const rowNum = this.props.rowNum
+        const colNum = this.props.colNum
+    
+        let whichRow = "";
+        let whichCol = "";
+        
+        if (rowNum===0) {
+            whichRow = "row-first"
+        } else if (rowNum===this.props.gridSize - 1) {
+            whichRow = "row-last"
+        }
+
+        if (colNum===0) {
+            whichCol = "col-first"
+        } else if (colNum===this.props.gridSize - 1) {
+            whichCol = "col-last"
+        }
+
+        let cellClass = "cell"
+
+        if (whichRow) {
+            cellClass += ` ${whichRow}`
+        }
+
+        if (whichCol) {
+            cellClass += ` ${whichCol}`
+        }
+
         return (
-            <div className="cell" onClick = {()=> this.handleClick(rowNum,colNum)}>
+            <div className={cellClass} onClick = {()=> this.handleClick(rowNum,colNum)}>
                 {this.state.move}
             </div>
         )

@@ -117,7 +117,7 @@ class GameBoard extends React.Component {
         for (let row=0; row<this.props.gridSize; row++) {
             grid.push(<GridRow 
                 rowNum = {row} 
-                numColumns= {this.props.gridSize} 
+                gridSize= {this.props.gridSize} 
                 updatesRequiredOnClick = {this.updatesRequiredOnClick}
                 isXNext = {this.state.isXNext}/>)
         }

@@ -6,12 +6,15 @@ const GridRow = (props) => {
 
     const res = []
 
-    for (let col=0; col < props.numColumns; col++){
+    for (let col=0; col < props.gridSize; col++){
+
         res.push(<GridCell 
             rowNum = {props.rowNum} 
             colNum={col}
             updatesRequiredOnClick = {props.updatesRequiredOnClick} 
             isXNext = {props.isXNext}
+            gridSize = {props.gridSize}
+            key = {`${props.rowNum}${col}`}
             />)
     }
     return (

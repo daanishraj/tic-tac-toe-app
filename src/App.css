@@ -14,6 +14,22 @@
     font-size: 25px;
 }
 
+.row-first { 
+  border-top: none;
+}
+
+.row-last {
+  border-bottom: none;
+}
+
+.col-first {
+  border-left: none;
+}
+
+.col-last {
+  border-right: none;
+}
+
 .result {
   font-size: 2em;
   text-align: center;
