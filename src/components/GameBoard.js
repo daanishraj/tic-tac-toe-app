@@ -18,6 +18,7 @@ class GameBoard extends React.Component {
     }   
     
     componentDidMount() {
+        console.log('dummy commit');
         this.resetState()
       }
     
